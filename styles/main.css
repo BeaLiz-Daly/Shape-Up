@@ -2,22 +2,31 @@ body {
   font-family: sans-serif;
   margin-left:1rem;
 }
-#headingSU {
+#HeadingSU {  //this is the Shape Up! text seen in blue at top of screen
   font-family: sans-serif;
-  color:pink;
+  color:CornflowerBlue;
+   font-style: italic;
 }
 
 h1 {
-  color: white;
+  color:red;
   text-align: center;
 }
-
+p a {
+  font-weight: bold;
+  color:red;
+}
 p {
   font-family: verdana;
   font-size: 20px;
 }
-blockquote{
-    font-family: sans-serif;
-    margin-left:3rem;
-    font-size:110%;
+main blockquote{
+   font-family: sans-serif;
+   margin-left:1.5rem;
+   font-size:120%;
+}
+ul li a {
+  font-weight:bold;
+  color:CornflowerBlue;
+  line-height: 1.6; //increases spacing between list items
 }

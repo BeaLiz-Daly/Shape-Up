@@ -1,54 +1,62 @@
+/* Main CSS Styling sheet for Shape Up! CA project */
+
 body {
- // display: grid;
-  // grid-template-columns: ;
+  background-color:MistyRose;
+  display: grid;
   font-family: sans-serif;
   margin-left:1rem;
-}
-header{
-  display:grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-}
-header img {grid-row:1/2; grid-column:1/2; width: 110%;}
-header h2 {}
+  font-size:4rem; }
 
-#HeadingSU {  //this is the Shape Up! text seen in blue at top of screen
+ /* simple grid attribute declaration for header image and text */
+header {
+  background-color:PeachPuff;
+  display:grid;
+  grid-template-columns:600px 1fr;            /* setting the initial scale of first col to 600px and dividing remainder of space into 1 other col*/
+  grid-template-rows: repeat(2, 1fr); }       /* setting header section to be 2 rows, one for image and h1 and the other for the h2 */
+
+ /*Image at top of page*/
+header img {grid-row:1/2; grid-column:1/2; width: 100%;}
+
+ /* "find the best fit for you" h2 slogan text */
+header h2 {
+  grid-column: 2/ 3;
+  justify-self: left;
+  grid-row: 2 / 3;
+  margin-left:3.5em;
+  font-size:5rem;}
+
+ /* "Shape Up!" text seen in blue at top of screen */
+#HeadingSU {
+  justify-self: left;
+  margin-left:1em;
   font-family: sans-serif;
-  font-size:3rem;
+  font-size:12rem;
   font-weight: 750;
   color:#4682b4;
-  font-style: italic;
-  text-shadow: 4px 4px 5px #4682b4;
+  text-shadow: -17px 15px 7px rgba(62,114,206,0.69);    /*   shadow specifications from                        */
+  font-style: italic;                                   /*  "html-css-js.com/css/generator/text-shadow"       */
   grid-column:2/4;
-  grid-row:;
-}
+  grid-row:1/2;}
 
-//.first-grid-item {
-  background-color: salmon !important;
-  grid-column: 1 / 5;
-  color: white;
-//}
+main{
+ background-color:PaleGreen;
+ display:grid;
+ grid-template-rows:repeat(3, 1fr);
+ grid-template-columns:repeat(3,1fr);}
 
+main h1, main p, main blockquote{
+  grid-column:1/4;}
 
-h1 {
+h1 {text-align: center;}
+p a {font-weight: bold; color:#800000;}
+p {font-family: verdana;font-size:4rem;}
 
-  text-align: center;
-}
-p a {
-  font-weight: bold;
-  color:red;
-}
-p {
-  font-family: verdana;
-  font-size: 20px;
-}
 main blockquote{
    font-family: sans-serif;
    margin-left:1.5rem;
-   font-size:120%;
-}
+   font-size:4rem;}
+
 ul li a {
   font-weight:bold;
   color:CornflowerBlue;
-  line-height: 1.6; //increases spacing between list items
-}
+  line-height: 1.2;} /*increases spacing between list items*/
